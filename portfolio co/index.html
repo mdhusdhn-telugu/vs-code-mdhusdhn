@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhu Sudhan Telugu's Portfolio</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Honk&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Reenie+Beanie&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+
+    <script src="Portfolio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body >
+  <!--
+  <div class="container">
+    <div class="text-overlay">
+        <a href="link-to-berkshire" class="hover-link" data-video="/Users/madhusudhantelugu/vs code mdhusdhn/Portfolio/walk.mp4"><span class="hover-text">Sleek</span></a>
+        <a href="link-to-new-dice" class="hover-link" data-video="/Users/madhusudhantelugu/vs code mdhusdhn/Portfolio/drink.mp4"><span class="hover-text">CodeCarnivore</span></a>
+        <a href="#" class="hover-link" data-video="/Users/madhusudhantelugu/vs code mdhusdhn/Portfolio/walk.mp4"><span class="hover-text">Roam the Résumé Wilderness</span></a>
+        <a href="link-to-twist" class="hover-link" data-video="/Users/madhusudhantelugu/vs code mdhusdhn/Portfolio/two panther.mp4"><span class="hover-text">BinaryPredator</span></a>
+        <a href="link-to-arbussoniere" class="hover-link" data-video="/Users/madhusudhantelugu/vs code mdhusdhn/Portfolio/walk.mp4"><span class="hover-text">Pantherine</span></a>
+    </div>
+    
+    <div class="background-video">
+        <video id="hover-video" width="100%" height="100%" loop muted autoplay>
+            <source id="hover-video-source" src="/Users/madhusudhantelugu/vs code mdhusdhn/Portfolio/cover.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+-->
+
+
+<div class="banner-container">
+  <div class="banner banner-1">Native Android Apps 🐾 Cross-platform Development 🐾 UI/UX Design</div>
+  <h1>Welcome to My Portfolio!</h1>
+  <div class="banner banner-2">RESTful Integration 🐾 Network Requests 🐾 Image Loading 🐾 Modern Libraries 🐾 Cloud Integration</div>
+</div>
+
+
+
+
+<nav class="navbar">
+  <div class="navbar-toggle" id="navbar-toggle">
+      ☰
+  </div>
+  <ul class="navbar-menu" id="navbar-menu">
+      <li class="navbar-item"><a href="#hero">Den</a></li>
+      <li class="navbar-item"><a href="#about">Habitat</a></li>
+      <li class="navbar-item"><a href="#projectsdone">Hunts</a></li>
+      <li class="navbar-item"><a href="#edu">Wisdom</a></li>
+      <li class="navbar-item"><a href="#contact-me">Track me</a></li>
+  </ul>
+</nav>
+<script>
+  document.getElementById('navbar-toggle').addEventListener('click', function () {
+    var menu = document.getElementById('navbar-menu');
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
+    }
+  });
+</script>
+
+
+<section id="hero" class="hero-section">
+  <div class="hero-content">
+    <div class="intro-text">
+      <h3>Hello, <br> I'm   <span id="names">MadhuSudhan</span></h3>
+      <p>"A coding predator on the hunt for innovative solutions. With a keen eye for detail and a passion for development, I stalk and capture the perfect blend of form and function, navigating the dense digital jungle like the <i> Ghost of the Forest</i>, leaving a trail of efficient code and elegant design in my wake. Let's embark on a digital safari and create a masterpiece that roars with excellence."</p>
+    </div>
+    <div class="ctainer">
+      <div class="text-left hidden">Madhu</div>
+      <img src="./files/hero33.jpeg" alt="Person Image" class="image">
+      <div class="text-top-right hidden">Sudhan</div>
+      <div class="text-bottom-right hidden" id="age"></div>
+    </div>
+  </div>
+</section>
+
+<div class="text-container">
+  <div class="text-box"><a href="#">Months in Digital Jungle</a></div>
+  <div class="text-box"><a href="#">BCA Student | Android Developer-in-Training</a></div>
+  <div class="text-box"><a href="./files/Madhusudhan_android dev-2.pdf">Roam the Résumé Wilderness</a></div>
+  <div class="text-box linkedin-link"><a href="https://www.linkedin.com/in/madhusudhantelugu/">Linkedin Profile</a></div>
+  <div class="text-box"><a href="https://wa.me/918688381084?text=Hello%20MadhuSudhan,%20I%20came%20across%20your%20portfolio%20website%20and%20am%20interested%20in%20discussing%20a%20potential%20opportunity%20with%20you." target="_blank">Whatsapp</a></div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    function handleIntersection(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }
+
+    const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+
+    const textBoxes = document.querySelectorAll('.text-box');
+    textBoxes.forEach(box => {
+      observer.observe(box);
+    });
+  });
+</script>
+
+<style>
+  @media only screen and (min-width: 768px) {
+    .linkedin-link {
+      display: none;
+    }
+  }
+</style>
+
+
+<section class="about-me" id="about">
+  <div class="conta">
+    <h1>About Me</h1>
+    <p class="about-intro">
+      I am a passionate <em>Android Developer</em> with a deep understanding of mobile application development, UI/UX design, and web development. I have over six months of experience in the field, working with clients in various industries to create innovative mobile solutions.
+    </p>
+    <div class="about-accordion">
+      <div class="about-card">
+        <button class="accordion-button">Android Development <span class="accordion-symbol">+</span></button>
+        <div class="accordion-content">
+          <p>I am currently enrolled in Meta Android Development, Meta Front-End Development, and Meta React Native certifications, actively enhancing my skills in mobile app development. I specialize in Android app development, including native app development, hybrid app development, and cross-platform app development. Proficient in Java, Kotlin, and other programming languages, I am dedicated to staying updated with the latest technologies and best practices in the field.</p>
+        </div>
+      </div>
+      <div class="about-card">
+        <button class="accordion-button">iOS Development <span class="accordion-symbol">+</span></button>
+        <div class="accordion-content">
+          <p>I am currently enrolled in Meta iOS certification and have a solid foundation in Swift programming language. My focus lies in iOS app development, where I aim to leverage my skills to create efficient and user-friendly applications for Apple devices. Through Meta iOS certification, I am enhancing my expertise and staying updated with the latest trends and technologies in iOS development.</p>
+        </div>
+      </div>
+      <div class="about-card">
+        <button class="accordion-button">UI/UX Design <span class="accordion-symbol">+</span></button>
+        <div class="accordion-content">
+          <p>With a completed Google UI Designer Professional Certificate, I bring expertise in UI/UX design to my projects. My skills include user research, wireframing, prototyping, and visual design. I aim to create visually appealing and user-friendly interfaces that provide seamless and engaging user experiences, balancing functionality with aesthetics.</p>
+        </div>
+      </div>
+      <div class="about-card">
+        <button class="accordion-button">Learning & Growth <span class="accordion-symbol">+</span></button>
+        <div class="accordion-content">
+          <p>As a student, I am dedicated to continuous learning and personal growth. I actively engage in enhancing my skills in Android development, UI/UX design, and other areas of interest. I am enthusiastic about exploring new technologies, participating in online courses, and contributing to open-source projects to expand my knowledge and capabilities.</p>
+        </div>
+      </div>      
+      </div>
+      <div class="about-card">
+        <button class="accordion-button">Strengths <span class="accordion-symbol">+</span></button>
+        <div class="accordion-content">
+          <p>My strengths lie in my dedication to learning, my attention to detail, and my ability to collaborate effectively in team environments. I thrive on challenges and am constantly seeking new opportunities to grow and improve. Additionally, I am adaptable and able to quickly grasp new concepts, making me an asset to any project or team.</p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="service-section">
+  <div class="service-container">
+    <h1>Services</h1>
+    <div class="service-items">
+      <div class="service-box animated-icon">
+        <i class="fas fa-paint-brush fa-2x" style="color: wheat;"></i> 
+        <h3>Web Design</h3>
+        <p>I do ui/ux design for the website that helps website to get a unique look.</p>
+      </div>
+      <div class="service-box animated-icon">
+        <i class="fas fa-code fa-2x" style="color: wheat;"></i> 
+        <h3>Web Dev</h3>
+        <p>I also develop the websites. I create high performance website with blazing fast speed.</p>
+      </div>
+      <div class="service-box animated-icon">
+        <i class="fas fa-mobile-alt fa-2x" style="color: wheat;"></i> 
+        <h3>App Dev</h3>
+        <p>I develop mobile application. I create mobile app with eye catching ui.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="projectsdone">
+  <h1>Projects</h1>
+  <div class="project-container">
+    <div class="project-card">
+      <img src="" alt="">
+      <div class="project-info">
+        <h4><b>Madhu Dairy Delights</b></h4>
+        <p><b>Description:</b>Madhu Dairy Delights is a responsive website showcasing dairy products, company information, and a contact form. It provides a user-friendly and visually appealing experience for the dairy industry.</p>
+        <p><b>Technologies Used:</b> HTML, CSS, JavaScript, React, Node.js</p>
+        <a href="https://madhudairydelights.netlify.app/" target="_blank">Visit Website</a>
+      </div>
+    </div>
+    <div class="project-card highlighted">
+      <img src="" alt="">
+      <div class="project-info">
+        <h4><b>Menu Display App Interface</b></h4>
+        <p><b>Description:</b> Little Lemon Restaurant is a menu display application featuring a user-friendly interface for showcasing dishes and specials. Key features include adding items to the cart, checking costs, and ensuring a delightful, responsive user experience on all devices.</p>
+        <p><b>Technologies Used:</b> Android Studio, Jetpack Compose, XML, Kotlin</p>
+        <a href="https://coursera-assessments.s3.amazonaws.com/assessments/1706890184192/3a265fe8-a7f0-434f-9cea-519c67bb47e6/Little%20Lemon.zip" target="_blank">Download source code</a>
+      </div>
+    </div>
+    
+   <!-- <div class="project-card">
+      <img src="" alt="">
+      <div class="project-info">
+        <h4><b>Jyothi High School Website</b></h4>
+        <p><b>Description:</b>website facilitates admissions, student login, fee payment, and online exams. It offers a comprehensive platform with seamless functionalities, ensuring easy access and management for students, parents, and staff.</p>
+        <p><b>Technologies Used:</b>HTML, CSS, JavaScript, Bootstrap, PHP, MySQL</p>
+      </div>
+    </div>
+  </div> -->
+</section>
+
+
+<div class="till">
+  <h1 class="tillnow">Journey So Far & Present Ventures</h1>
+</div>
+<div class="working">
+<div class="myworks">
+  <div class="counter">
+      <span class="count" data-target="15">0</span>
+      <sup class="plus" style="color: orange;">+</sup>
+      <p>Projects</p>
+  </div>
+  <div class="counter">
+      <span class="count" data-target="50000">0</span>
+      <sup class="rupee" style="color: orange;">₹</sup>
+      <p>Total Project Value</p>
+  </div>
+  <div class="counter">
+      <span class="count" data-target="10">0</span>
+      <sup class="plus" style="color: orange;">+</sup>
+      <p>Clients</p>
+  </div>
+</div>
+
+<div class="chart-container">
+  <canvas id="myPolarAreaChart" class="piechart" style="background-color: transparent;"></canvas>
+
+</div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const counters = document.querySelectorAll('.counter');
+
+  function checkVisibility() {
+    counters.forEach(counter => {
+      const rect = counter.getBoundingClientRect();
+      if (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+        counter.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', checkVisibility);
+  checkVisibility(); 
+});
+
+</script>
+
+
+
+
+
+
+<div class="edu" style="text-align:center;" id="edu">
+  <h1>Educational History and GPA</h1>
+</div>
+
+<div class="portfolio-wrapper" >
+  <div class="education-section">
+      <div class="education-carousel">
+          <div class="education-slide highlight" data-tooltip="9.5 out of 10" data-grade="95">
+              <img src="./files/school.jpeg" alt="School">
+              <div class="education-caption">Jyothi High School</div>
+          </div>
+          <div class="education-slide" data-tooltip="885 out of 1000" data-grade="88.5">
+              <img src="./files/college.jpeg" alt="College">
+              <div class="education-caption">Rao's Junior College</div>
+          </div>
+          <div class="education-slide" data-tooltip="9.4 out of 10" data-grade="90.4">
+              <img src="./files/university.jpeg" alt="University">
+              <div class="education-caption">Rayalaseema University</div>
+          </div>
+      </div>
+      <div class="education-tooltip">90 out of 100</div>
+  </div>
+  <div class="performance-section">
+      <canvas id="performanceChart"></canvas>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+
+
+<div class="inspiration-section">
+  <h1 style="text-align: center; margin-top: 30px;">Certifications</h1>
+  <div class="text-content">
+      <p id="centered-text">"My claws in Development are honed through a comprehensive certification from these esteemed Institutions."</p>
+      <p>Check out my <a href="https://www.linkedin.com/in/madhusudhantelugu/" target="_blank" class="animated-linkedin">LinkedIn profile</a> for a complete list of my certifications and endorsements.</p>
+  </div>
+  <div class="background-images">
+      <div class="certificate-container" style="top: 12%; left: 15%;">
+          <img src="./files/meta android certifi.jpeg" class="bg-image">
+          <div class="certificate-name">Meta Android Developer Professional Certificate</div>
+      </div>
+      <div class="certificate-container" style="top: 30%; left: 70%;">
+          <img src="./files/Meta Swift prgrm.jpeg" class="bg-image blur">
+          <div class="certificate-name blur">Web Applications for Everybody Specialization</div>
+      </div>
+      <div class="certificate-container" style="top: 51%; left: 40%;">
+          <img src="./files/Meta intro to iOS dev.jpeg" class="bg-image">
+          <div class="certificate-name">Meta iOS Developer Professional Certificate</div>
+      </div>
+      <div class="certificate-container" style="top: 70%; left: 10%;">
+          <img src="./files/Google foundations of ux.jpeg" class="bg-image">
+          <div class="certificate-name">Google UX Design Professional Certificate</div>
+      </div>
+      <div class="certificate-container" style="top: 18%; left: 50%;">
+          <img src="./files/Meta Introduction to Front end.jpeg" class="bg-image blur">
+          <div class="certificate-name blur">Meta Front-End Developer Professional Certificate</div>
+      </div>
+      <div class="certificate-container" style="top: 78.5%; left: 60%;">
+          <img src="./files/Meta Html and Css in depth.jpeg" class="bg-image blur">
+          <div class="certificate-name blur">University of California San Diego_Data Structures and Algorithms Specialization</div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="skills-grid">
+  <div class="skill-circle java" data-percent="80">
+      <div class="tooltip">80%</div>
+          <div class="emoji"></div>
+          <svg class="circle-border">
+              <circle class="border" cx="25" cy="25" r="20" stroke="#ccc" stroke-width="10" fill="transparent"></circle>
+              <circle class="value" cx="25" cy="25" r="20" stroke="green" stroke-width="10" fill="transparent" stroke-dasharray="0, 125.6"></circle>
+          </svg>
+          <div class="label">Java</div>
+      </div>
+      <div class="skill-circle javascript" data-percent="70">
+          <div class="tooltip">70%</div>
+          <div class="emoji"></div>
+          <svg class="circle-border">
+              <circle class="border" cx="25" cy="25" r="20" stroke="#ccc" stroke-width="10" fill="transparent"></circle>
+              <circle class="value" cx="25" cy="25" r="20" stroke="green" stroke-width="10" fill="transparent" stroke-dasharray="0, 125.6"></circle>
+          </svg>
+          <div class="label">JavaScript</div>
+      </div>
+      <div class="skill-circle python" data-percent="90">
+          <div class="tooltip">90%</div>
+          <div class="emoji"></div>
+          <svg class="circle-border">
+              <circle class="border" cx="25" cy="25" r="20" stroke="#ccc" stroke-width="10" fill="transparent"></circle>
+              <circle class="value" cx="25" cy="25" r="20" stroke="green" stroke-width="10" fill="transparent" stroke-dasharray="0, 125.6"></circle>
+          </svg>
+          <div class="label">Python</div>
+      </div>
+      <div class="skill-circle css" data-percent="60">
+          <div class="tooltip">60%</div>
+          <div class="emoji"></div>
+          <svg class="circle-border">
+              <circle class="border" cx="25" cy="25" r="20" stroke="#ccc" stroke-width="10" fill="transparent"></circle>
+              <circle class="value" cx="25" cy="25" r="20" stroke="green" stroke-width="10" fill="transparent" stroke-dasharray="0, 125.6"></circle>
+          </svg>
+          <div class="label">CSS</div>
+      </div>
+      <div class="skill-circle html" data-percent="85">
+          <div class="tooltip">85%</div>
+          <div class="emoji"></div>
+          <svg class="circle-border">
+              <circle class="border" cx="25" cy="25" r="20" stroke="#ccc" stroke-width="10" fill="transparent"></circle>
+              <circle class="value" cx="25" cy="25" r="20" stroke="green" stroke-width="10" fill="transparent" stroke-dasharray="0, 125.6"></circle>
+          </svg>
+          <div class="label">HTML</div>
+      </div>
+      <div class="skill-circle sql" data-percent="75">
+          <div class="tooltip">75%</div>
+          <div class="emoji"></div>
+          <svg class="circle-border">
+              <circle class="border" cx="25" cy="25" r="20" stroke="#ccc" stroke-width="10" fill="transparent"></circle>
+              <circle class="value" cx="25" cy="25" r="20" stroke="green" stroke-width="10" fill="transparent" stroke-dasharray="0, 125.6"></circle>
+          </svg>
+          <div class="label">SQL</div>
+      </div>
+      <div class="skill-circle react" data-percent="65">
+          <div class="tooltip">65%</div>
+          <div class="emoji"></div>
+          <svg class="circle-border">
+              <circle class="border" cx="25" cy="25" r="20" stroke="#ccc" stroke-width="10" fill="transparent"></circle>
+              <circle class="value" cx="25" cy="25" r="20" stroke="green" stroke-width="10" fill="transparent" stroke-dasharray="0, 125.6"></circle>
+          </svg>
+          <div class="label">React</div>
+      </div>
+      <div class="skill-circle nodejs" data-percent="50">
+          <div class="tooltip">50%</div>
+          <div class="emoji"></div>
+          <svg class="circle-border">
+              <circle class="border" cx="25" cy="25" r="20" stroke="#ccc" stroke-width="10" fill="transparent"></circle>
+              <circle class="value" cx="25" cy="25" r="20" stroke="green" stroke-width="10" fill="transparent" stroke-dasharray="0, 125.6"></circle>
+          </svg>
+          <div class="label">Node.js</div>
+      </div>
+      <div class="skill-circle php" data-percent="55">
+          <div class="tooltip">55%</div>
+          <div class="emoji"></div>
+          <svg class="circle-border">
+              <circle class="border" cx="25" cy="25" r="20" stroke="#ccc" stroke-width="10" fill="transparent"></circle>
+              <circle class="value" cx="25" cy="25" r="20" stroke="green" stroke-width="10" fill="transparent" stroke-dasharray="0, 125.6"></circle>
+          </svg>
+          <div class="label">PHP</div>
+      </div>
+      <div class="skill-circle git" data-percent="80">
+          <div class="tooltip">80%</div>
+          <div class="emoji"></div>
+          <svg class="circle-border">
+              <circle class="border" cx="25" cy="25" r="20" stroke="#ccc" stroke-width="10" fill="transparent"></circle>
+              <circle class="value" cx="25" cy="25" r="20" stroke="green" stroke-width="10" fill="transparent" stroke-dasharray="0, 125.6"></circle>
+          </svg>
+          <div class="label">Git</div>
+      </div>
+      <div class="skill-circle kotlin" data-percent="40">
+          <div class="tooltip">40%</div>
+          <div class="emoji"></div>
+          <svg class="circle-border">
+              <circle class="border" cx="25" cy="25" r="20" stroke="#ccc" stroke-width="10" fill="transparent"></circle>
+              <circle class="value" cx="25" cy="25" r="20" stroke="green" stroke-width="10" fill="transparent" stroke-dasharray="0, 125.6"></circle>
+          </svg>
+          <div class="label">Kotlin</div>
+      </div>
+      <div class="skill-circle swift" data-percent="45">
+          <div class="tooltip">45%</div>
+          <div class="emoji"></div>
+          <svg class="circle-border">
+              <circle class="border" cx="25" cy="25" r="20" stroke="#ccc" stroke-width="10" fill="transparent"></circle>
+              <circle class="value" cx="25" cy="25" r="20" stroke="green" stroke-width="10" fill="transparent" stroke-dasharray="0, 125.6"></circle>
+          </svg>
+          <div class="label">Swift</div>
+      </div>
+  </div>
+  
+  
+
+
+
+  <div class="feedback-container">
+    <div class="bars-container">
+      <div class="bar"><span>Discipline</span></div>
+      <div class="bar"><span>Consistency</span></div>
+      <div class="bar"><span>Believe</span></div>  
+    </div>
+  </div>
+  
+
+
+
+  <div class="faqs">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-section">
+        <div class="faq-categories">
+            <ul>
+                <li onclick="showFAQs('general')" data-category="general" class="selected">General</li>
+                <li onclick="showFAQs('experience')" data-category="experience">Experience</li>
+                <li onclick="showFAQs('projects')" data-category="projects">Projects</li>
+                <li onclick="showFAQs('contact')" data-category="contact">Contact</li>
+                
+            </ul>
+        </div>
+        <div class="faq-content">
+          <div class="faq-item general">
+            <h3>What is your experience with Android development?</h3>
+            <p>I have over <span id="experience-months"></span> months of experience developing Android applications, working with Java and Kotlin, and have completed various projects for different industries.</p>
+          </div>
+            <div class="faq-item general">
+                <h3>Do you provide maintenance services for existing Android applications?</h3>
+                <p>Yes, I offer maintenance services for existing Android applications, including bug fixes, performance optimization, and feature enhancements.</p>
+            </div>
+            <div class="faq-item general">
+                <h3>Can you assist with publishing an Android app to the Google Play Store?</h3>
+                <p>Absolutely, I can help you navigate the process of preparing and publishing your Android app on the Google Play Store, ensuring it meets all necessary requirements.</p>
+            </div>
+            <div class="faq-item general">
+                <h3>What are your rates for Android app development?</h3>
+                <p>My rates for Android app development vary depending on the scope and complexity of the project. Feel free to contact me for a personalized quote based on your requirements.</p>
+            </div>
+            <div class="faq-item experience" style="display: none;">
+                <h3>Can you describe a challenging project you've worked on?</h3>
+                <p>One of the most challenging projects involved integrating a complex API with real-time data updates, which required in-depth knowledge of asynchronous programming and efficient UI/UX design to ensure smooth performance.</p>
+            </div>
+            <div class="faq-item experience" style="display: none;">
+                <h3>Do you have experience with cross-platform development?</h3>
+                <p>Yes, I have experience with cross-platform development using frameworks like Flutter and React Native, which allows me to create applications for both Android and iOS from a single codebase.</p>
+            </div>
+            <div class="faq-item experience" style="display: none;">
+                <h3>What tools and technologies do you use for Android development?</h3>
+                <p>I primarily use Android Studio as my IDE and leverage technologies like Kotlin, Java, XML, and various Android SDKs to build high-quality Android applications.</p>
+            </div>
+            <div class="faq-item experience" style="display: none;">
+                <h3>Are you familiar with the latest trends in Android development?</h3>
+                <p>Yes, I stay updated with the latest trends, best practices, and emerging technologies in the field of Android development to deliver modern and innovative solutions to my clients.</p>
+            </div>
+            <div class="faq-item projects" style="display: none;">
+                <h3>What types of projects have you worked on in the past?</h3>
+                <p>I have worked on a diverse range of projects, including e-commerce apps, social networking platforms, educational apps, productivity tools, and more.</p>
+            </div>
+            <div class="faq-item projects" style="display: none;">
+                <h3>Can you provide examples of Android apps you've developed?</h3>
+                <p>Yes, I can share portfolio samples showcasing Android apps I've developed upon request. Please feel free to reach out to me for more information.</p>
+            </div>
+            <div class="faq-item projects" style="display: none;">
+                <h3>What is your approach to project management and collaboration?</h3>
+                <p>I adopt an agile methodology for project management, ensuring frequent communication, transparency, and flexibility throughout the development process. I also utilize collaboration tools like Slack and Trello to streamline communication and task tracking.</p>
+            </div>
+            <div class="faq-item projects" style="display: none;">
+                <h3>How do you ensure the security of Android applications?</h3>
+                <p>I prioritize security throughout the development lifecycle, implementing best practices such as secure coding techniques, data encryption, HTTPS communication, and regular security audits to safeguard Android applications against potential vulnerabilities.</p>
+            </div>
+            <div class="faq-item contact" style="display: none;">
+              <h3>How can I get in touch with you?</h3>
+              <p>You can contact me through the contact form on my website or reach out to me via email at 
+                  <a href="mailto:mdhusdhndegree@gmail.com">contact@gmail.com</a>.
+              </p>
+          </div>                      <div class="faq-item contact" style="display: none;">
+                <h3>What is your response time for inquiries?</h3>
+                <p>I strive to respond to inquiries promptly within 24-48 hours, although response times may vary depending on the volume of inquiries received.</p>
+            </div>
+            <div class="faq-item contact" style="display: none;">
+                <h3>Do you offer consultations or initial project discussions?</h3>
+                <p>Yes, I offer free consultations and initial project discussions to understand your requirements, provide recommendations, and determine the best course of action for your project.</p>
+            </div>
+            <div class="faq-item contact" style="display: none;">
+              <h3>Can I schedule a call to discuss my project in detail?</h3>
+              <p>Absolutely, feel free to schedule a call at your convenience to discuss your project requirements, timeline, and any other relevant details. You can also 
+                  <a href="https://wa.me/8688381084?text=Hello%20Madhu%20Sudhan%20Telugu,%20I%20came%20across%20your%20portfolio%20website%20and%20I%20want%20to%20discuss%20something%20important%20over%20a%20call." target="_blank">
+                      book a scheduled call on WhatsApp
+                  </a>.
+              </p>
+          </div>
+                  </div>
+    </div>
+</div>
+
+<script>
+        function showFAQs(category) {
+            var categoryItems = document.querySelectorAll('.faq-categories li');
+            categoryItems.forEach(function(item) {
+                item.classList.remove('selected');
+            });
+
+            var selectedCategory = document.querySelector('.faq-categories li[data-category="' + category + '"]');
+            selectedCategory.classList.add('selected');
+
+            var faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(function(item) {
+                item.style.display = 'none';
+            });
+
+            var selectedFAQs = document.querySelectorAll('.faq-item.' + category);
+            selectedFAQs.forEach(function(item) {
+                item.style.display = 'block';
+            });
+        }
+
+        showFAQs('general');
+
+
+        document.querySelectorAll('.faq-item h3').forEach(item => {
+    item.addEventListener('click', () => {
+        const content = item.nextElementSibling;
+        const allContents = document.querySelectorAll('.faq-item p');
+        
+        allContents.forEach(otherContent => {
+            if (otherContent !== content) {
+                otherContent.style.display = 'none';
+            }
+        });
+
+        content.style.display = content.style.display === 'none' ? 'block' : 'none';
+    });
+});
+
+</script>
+
+
+
+
+<section class="contact-section" id="contact-me">
+  <div class="background-circles">
+      <div class="circle small-circle">
+        <div class="symbol" style="--angle: 0deg;">{</div>
+        <div class="symbol" style="--angle: 120deg;">\</div>
+        <div class="symbol" style="--angle: 240deg;">?</div>
+      </div>
+      <div class="circle medium-circle">
+        <div class="symbol" style="--angle: 0deg;">=</div>
+        <div class="symbol" style="--angle: 120deg;">]</div>
+        <div class="symbol" style="--angle: 240deg;">^</div>
+      </div>
+      <div class="circle large-circle">
+        <div class="symbol" style="--angle: 0deg;">@</div>
+        <div class="symbol" style="--angle: 120deg;">&</div>
+      </div>
+    </div>      
+  <div class="cont">
+    <div class="text-contents">
+      <h1>Collab with me</h1>
+      <h2>"Have an idea brewing? Let's collaborate! Share your project vision."</h2>
+      <p>Let's create impactful projects together, combining expertise in mobile development with a passion for innovation. Connect with me to explore new possibilities and make ideas come to life!</p>
+      <div class="services">
+        <div class="service">✔ Web Development</div>
+        <div class="service">✔ UI/UX Design</div>
+        <div class="service">✔ Quality Assurance</div>
+        <div class="service">✔ Integration</div>
+        <div class="service">✔ App Development</div>
+        <div class="service">✔ Security</div>
+      </div>
+    </div>
+    <div id="contact-form-container" class="contact-form">
+      <h2>Contact Me</h2>
+      <form id="contact-form" action="portfolio.php" method="post">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<section id="social-media">
+    <h2></h2>
+    <div class="paw-print">
+        <a href="#" class="paw toe-1">
+        </a>
+        <a href="#" class="paw toe-2">
+        </a>
+        <a href="#" class="paw toe-3">
+        </a>
+        <a href="#" class="paw toe-4">
+        </a>
+        <div class="paw heel"></div>
+    </div>
+</section>
+
+
+
+
+  <div class="containem" id="codeContainer">
+    <div class="macbook">
+      <div class="screen">
+        <div class="top-bar">
+          <div class="window-controls">
+            <div class="window-btn close-btn"></div>
+            <div class="window-btn minimize-btn"></div>
+            <div class="window-btn maximize-btn"></div>
+          </div>
+        </div>
+        <div class="content">
+          <pre class="my-coding language-java"><code>
+  // This is a Java program
+  public class Main {
+      public static void main(String[] args) {
+          System.out.println("Madhu Sudhan Telugu");
+          // I am an Android Developer in Java
+          System.out.println("I am an Android Developer");
+      }
+  }
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+-->
+
+
+
+
+  
+
+
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Terms and Conditions</h2>
+    <p>Welcome to my portfolio website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern Madhu Sudhan Telugu's relationship with you in relation to this website.</p>
+    <h3>Use of the Website</h3>
+    <p>The content of the pages of this website is for your general information and use only. It is subject to change without notice.</p>
+    <p>This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, personal information may be stored by us for use by third parties.</p>
+    <h3>Intellectual Property</h3>
+    <p>This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance, and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.</p>
+    <p>All trademarks reproduced in this website which are not the property of, or licensed to, the operator are acknowledged on the website.</p>
+    <h3>Unauthorized Use</h3>
+    <p>Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offense.</p>
+    <h3>Links to Other Websites</h3>
+    <p>From time to time, this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s).</p>
+    <h3>Limitation of Liability</h3>
+    <p>The information on this website is provided "as is" without any representations or warranties, express or implied. Madhu Sudhan Telugu makes no representations or warranties in relation to the information on this website.</p>
+    <h3>Governing Law</h3>
+    <p>Your use of this website and any dispute arising out of such use of the website is subject to the laws of your country/state.</p>
+    <p>If you have any questions about these Terms and Conditions, please mail us at <a href="mailto:mdhusdhn.telugu@gmail.com" class="email-link">support@gmail.com</a>.</p>
+  </div>
+</div>
+
+<script>
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+</script>
+
+
+
+
+
+<div id="privacyModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closePrivacyModal()">&times;</span>
+    <h2>Privacy Policy</h2>
+    <p>Welcome to our Privacy Policy page. This policy outlines how we collect, use, and protect your personal information.</p>
+    
+    <h3>Information Collection and Use</h3>
+    <p>We may collect various types of information from you when you visit our website or use our app, including:</p>
+    <ul>
+      <li>Your name, email address, and contact information</li>
+      <li>Information about your device, including device ID and IP address</li>
+      <li>Usage data, such as pages visited and interactions with the app</li>
+    </ul>
+    
+    <h3>Use of Information</h3>
+    <p>We use the collected information for various purposes:</p>
+    <ul>
+      <li>To provide and maintain our services</li>
+      <li>To improve our services and understand user preferences</li>
+      <li>To communicate with you, including sending updates and newsletters</li>
+    </ul>
+    
+    <h3>Information Sharing</h3>
+    <p>We do not sell, trade, or otherwise transfer your personal information to outside parties unless we provide you with advance notice.</p>
+    
+    <h3>Security</h3>
+    <p>We implement security measures to protect your personal information. However, no method of transmission over the internet or electronic storage is completely secure.</p>
+    
+    <h3>Changes to This Privacy Policy</h3>
+    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+    
+    <h3>Contact Us</h3>
+    <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto: mdhusdhn.telugu@gmail.com" class="email-link">support@gmail.com</a>.</p>
+  </div>
+</div>
+<script>
+  function openPrivacyModal() {
+    var privacyModal = document.getElementById('privacyModal');
+    privacyModal.style.display = 'block';
+  }
+
+  function closePrivacyModal() {
+    var privacyModal = document.getElementById('privacyModal');
+    privacyModal.style.display = 'none';
+  }
+</script>
+
+
+
+<footer class="footer">
+  <div class="footer-overlay"></div>
+  <div class="footer-container">
+      <div class="footer-logo">
+      </div>
+      <div class="footer-sections">
+          <div class="footer-section contact-info">
+              <h3>Contact Information</h3>
+              <ul>
+                  <li>Email: <a href="mailto:mdhusdhn.telugu@gmail.com">support@gmail.com</a></li>
+                  <li>Phone: <a href="tel:+918688381084">+91 xxxxx x1084</a></li>
+                  <li>Location: Nandyal, Andhra Pradesh</li>
+              </ul>
+          </div>
+          <div class="footer-section social-media">
+              <h3>Follow Me</h3>
+              <div class="social-icons">
+                  <a href="https://x.com/mdhusdhn"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.linkedin.com/in/madhusudhantelugu/"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://github.com/mdhusdhn-telugu"><i class="fab fa-github"></i></a>
+                  <a href="https://www.instagram.com/mdhusdhn.telugu?igsh=MTNsZTV0MnBvZGRncA=="><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+          <div class="footer-section links">
+              <h3>Quick Links</h3>
+              <ul>
+                  <li><a href="#hero">Home</a></li>
+                  <li><a href="#myportfolio">Portfolio</a></li>
+                  <li><a href="#contact-me">Contact</a></li>
+                  <li><a href="https://github.com/mdhusdhn-telugu?tab=repositories">GitHub Repository</a></li>
+              </ul>
+          </div>
+          <div class="footer-section legal">
+              <h3>Legal</h3>
+              <ul>
+                <li><a href="#" onclick="openPrivacyModal()">Privacy Policy</a></li>
+
+                <li><a href="#" onclick="openModal()">Terms of Use</a></li>
+                </ul>
+          </div>
+      </div>
+      <div class="footer-message">
+          <p style="color: goldenrod;">"Creating innovative and user-friendly mobile experiences."</p>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <img src="./files/logo.png" alt="Your Logo" style="max-width: 250px; margin: 5px;"> 
+
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+ <script>
+
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+});
+
+document.querySelectorAll('.container, .banner-container, .navbar, .hero-section, .text-container, .about-me, .till, .sponsor-box, .edu, .portfolio-wrapper, .inspiration-section, .skills-grid, .faqs, .contact-section, .cont, .footer, .service-section, .service-container, .service-items, .service-box, .about-card, .accordion-button, .accordion-content, .project-card, .project-container').forEach(section => {
+    observer.observe(section);
+});
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const headings = document.querySelectorAll('h1');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    headings.forEach(heading => {
+        observer.observe(heading);
+    });
+});
+
+
+
+
+
+
+var startTime = Date.now();
+
+function formatDuration(duration) {
+  var seconds = Math.floor((duration / 1000) % 60);
+  var minutes = Math.floor((duration / (1000 * 60)) % 60);
+  var hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
+  
+  return `${hours} hour(s), ${minutes} minute(s), and ${seconds} second(s)`;
+}
+
+function confirmLeave(event) {
+  var endTime = Date.now();
+  var sessionDuration = endTime - startTime;
+  var formattedDuration = formatDuration(sessionDuration);
+
+  var confirmationMessage = `Are you sure you want to leave this page? You just spent ${formattedDuration} with us.`;
+  event.returnValue = confirmationMessage; 
+  return confirmationMessage;
+}
+
+window.addEventListener('beforeunload', confirmLeave);
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('Script loaded'); // Check if script is loaded
+  const hoverTexts = document.querySelectorAll('.hover-text');
+  const hoverVideo = document.getElementById('hover-video');
+  const hoverVideoSource = document.getElementById('hover-video-source');
+  const defaultVideoSrc = '/Users/madhusudhantelugu/vs code mdhusdhn/Portfolio/cover.mp4';
+
+  hoverTexts.forEach(text => {
+    text.addEventListener('mouseover', () => {
+      const videoSrc = text.parentElement.getAttribute('data-video');
+      console.log(`Hovering over: ${text.innerText}, Video: ${videoSrc}`); 
+      hoverVideo.classList.add('loading'); 
+      hoverVideo.pause();
+      hoverVideoSource.src = videoSrc;
+      hoverVideo.load();
+      hoverVideo.oncanplay = () => {
+        hoverVideo.classList.remove('loading'); 
+        hoverVideo.play();
+      };
+    });
+
+    text.addEventListener('mouseout', () => {
+      console.log(`Mouse out: ${text.innerText}`);
+      hoverVideo.classList.add('loading'); 
+      hoverVideo.pause();
+      hoverVideoSource.src = defaultVideoSrc;
+      hoverVideo.load();
+      hoverVideo.oncanplay = () => {
+        hoverVideo.classList.remove('loading');
+        hoverVideo.play();
+      };
+    });
+  });
+});
+
+
+
+
+
+
+(function() {
+  let lastScrollTop = 0;
+  let animationStep = 0;
+  let scrollLocked = false;
+
+  document.addEventListener('scroll', function() {
+    if (scrollLocked) return;
+
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    let isScrollingDown = scrollTop > lastScrollTop;
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+
+    var banner1 = document.querySelector('.banner-1');
+    var banner2 = document.querySelector('.banner-2');
+    var banner1Position = banner1.getBoundingClientRect().top;
+    var banner2Position = banner2.getBoundingClientRect().top;
+    var windowHeight = window.innerHeight;
+
+    var delay = 5;
+
+    if (window.innerWidth > 768) { // Only run this logic for screens wider than 768px
+      if (isScrollingDown) {
+        if (banner1Position < windowHeight && animationStep === 0) {
+          lockScroll();
+          animateBanner(banner1, 'translateX(0)', '1', delay, function() {
+            animationStep = 1;
+            unlockScroll();
+          });
+        } else if (banner2Position < windowHeight && animationStep === 1) {
+          lockScroll();
+          animateBanner(banner2, 'translateX(0)', '1', delay, function() {
+            animationStep = 2;
+            unlockScroll();
+          });
+        }
+      } else {
+        if (banner2Position >= 0 && animationStep === 2) {
+          lockScroll();
+          animateBanner(banner2, 'translateX(100%)', '0', delay, function() {
+            animationStep = 1;
+            unlockScroll();
+          });
+        } else if (banner1Position >= 0 && animationStep === 1) {
+          lockScroll();
+          animateBanner(banner1, 'translateX(-100%)', '0', delay, function() {
+            animationStep = 0;
+            unlockScroll();
+          });
+        }
+      }
+    }
+  });
+
+  function lockScroll() {
+    if (window.innerWidth > 768) { 
+      scrollLocked = true;
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function unlockScroll() {
+    setTimeout(function() {
+      scrollLocked = false;
+      document.body.style.overflow = 'auto';
+    }, 100);
+  }
+
+  function animateBanner(banner, transformValue, opacityValue, delay, callback) {
+    setTimeout(function() {
+      banner.style.transform = transformValue;
+      banner.style.opacity = opacityValue;
+      banner.addEventListener('transitionend', function handler() {
+        banner.removeEventListener('transitionend', handler);
+        callback();
+      });
+    }, delay);
+  }
+})();
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const navbar = document.querySelector(".navbar");
+    const container = document.querySelector(".banner-container");
+    const feedbackContainer = document.querySelector(".feedback-container");
+
+    function checkScroll() {
+        if (window.innerWidth < 768) {
+            navbar.style.display = "block";
+            navbar.style.top = "0";
+            return;
+        }
+
+        const containerBottom = container.getBoundingClientRect().bottom;
+        const feedbackContainerInView = feedbackContainer && feedbackContainer.getBoundingClientRect().top < window.innerHeight && feedbackContainer.getBoundingClientRect().bottom >= 0;
+
+        if (feedbackContainerInView) {
+            navbar.style.display = "none";
+        } else {
+            navbar.style.display = "block";
+            if (containerBottom <= 0) {
+                navbar.style.top = "0";
+            } else {
+                navbar.style.top = "-100px"; 
+            }
+        }
+    }
+
+    checkScroll();
+
+    window.addEventListener("scroll", checkScroll);
+    window.addEventListener("resize", checkScroll);
+});
+
+
+
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    const birthdate = new Date(2002, 4, 2); 
+    const ageElement = document.getElementById('age');
+
+    function calculateAge() {
+        const currentDate = new Date();
+        let years = currentDate.getFullYear() - birthdate.getFullYear();
+        let months = currentDate.getMonth() - birthdate.getMonth();
+        let days = currentDate.getDate() - birthdate.getDate();
+
+        if (days < 0) {
+            months -= 1;
+            days += new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
+        }
+
+        if (months < 0) {
+            years -= 1;
+            months += 12;
+        }
+
+        return `${years} years ${months} months ${days} days`;
+    }
+
+    ageElement.textContent = calculateAge();
+
+    window.addEventListener('scroll', function() {
+        const elements = document.querySelectorAll('.text-left, .text-top-right, .text-bottom-right');
+        if (window.scrollY > 100) {
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('visible');
+                    setTimeout(() => {
+                        el.style.animation = 'fadeOut 1s forwards';
+                        setTimeout(() => {
+                            el.classList.remove('visible');
+                            el.style.animation = '';
+                        }, 1000); 
+                    }, 10000); 
+                }, index * 900); 
+            });
+        } else {
+            elements.forEach(el => el.classList.remove('visible'));
+        }
+    });
+});
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const startDate = new Date(2023, 7);
+
+    const currentDate = new Date(); 
+
+    const monthsDiff = (currentDate.getFullYear() - startDate.getFullYear()) * 12 + (currentDate.getMonth() - startDate.getMonth());
+
+    const monthsTextElement = document.querySelector('.text-container .text-box:first-child a');
+    monthsTextElement.textContent = `${monthsDiff} Months in Digital Jungle`;
+
+    const experienceMonthsElement = document.getElementById('experience-months');
+    experienceMonthsElement.textContent = monthsDiff;
+  });
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const accordionButtons = document.querySelectorAll(".accordion-button");
+
+  accordionButtons.forEach(button => {
+    button.addEventListener("click", function() {
+      accordionButtons.forEach(btn => {
+        if (btn !== this) {
+          btn.classList.remove("active");
+          btn.nextElementSibling.style.maxHeight = null;
+          btn.querySelector(".accordion-symbol").textContent = "+";
+        }
+      });
+
+      const accordionContent = this.nextElementSibling;
+
+      if (this.classList.contains("active")) {
+        this.classList.remove("active");
+        accordionContent.style.maxHeight = null;
+        this.querySelector(".accordion-symbol").textContent = "+";
+      } else {
+        this.classList.add("active");
+        accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+        this.querySelector(".accordion-symbol").textContent = "+";
+      }
+    });
+  });
+});
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll('.count');
+
+    const options = {
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = entry.target;
+                const updateCount = () => {
+                    const targetValue = +target.getAttribute('data-target');
+                    const currentCount = +target.innerText;
+                    const increment = targetValue / 300; 
+
+                    if (currentCount < targetValue) {
+                        target.innerText = Math.ceil(currentCount + increment);
+                        setTimeout(updateCount, 20); 
+                    } else {
+                        target.innerText = targetValue;
+                    }
+                };
+                updateCount();
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    counters.forEach(counter => {
+        observer.observe(counter);
+    });
+});
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const chartElement = document.getElementById('myPolarAreaChart');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+
+                const ctx = chartElement.getContext('2d');
+                const data = {
+                    labels: ['Mobile Apps', 'Web Development', 'Desktop Applications', 'IoT/Embedded Systems', 'Others'],
+                    datasets: [{
+                        data: [40, 30, 15, 10, 5], 
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.6)',
+                            'rgba(255, 159, 64, 0.6)',
+                            'rgba(255, 205, 86, 0.6)',
+                            'rgba(75, 192, 192, 0.6)',
+                            'rgba(54, 162, 235, 0.6)' 
+                        ],
+                        borderColor: [
+                            'rgb(255, 99, 132)',
+                            'rgb(255, 159, 64)',
+                            'rgb(255, 205, 86)',
+                            'rgb(75, 192, 192)',
+                            'rgb(54, 162, 235)'
+                        ],
+                        borderWidth: 1
+                    }]
+                };
+                const options = {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    let label = context.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.raw !== null) {
+                                        label += context.raw;
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    },
+                    scale: {
+                        ticks: {
+                            beginAtZero: true,
+                            max: 90
+                        }
+                    }
+                };
+
+                new Chart(ctx, {
+                    type: 'polarArea',
+                    data: data,
+                    options: options
+                });
+
+                observer.unobserve(chartElement); 
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    observer.observe(chartElement);
+});
+
+
+
+
+
+
+
+
+/*document.addEventListener('DOMContentLoaded', () => {
+  const customCursor = document.createElement('div');
+  customCursor.classList.add('custom-cursor');
+  document.body.appendChild(customCursor);
+
+  const previewText = document.createElement('div');
+  previewText.classList.add('preview-text');
+  previewText.textContent = 'Upcoming_Applause';
+  customCursor.appendChild(previewText);
+
+  document.querySelector('.sponsor-box').addEventListener('mousemove', (e) => {
+    const boxRect = e.currentTarget.getBoundingClientRect();
+    customCursor.style.left = `${e.clientX}px`;
+    customCursor.style.top = `${e.clientY}px`;
+    previewText.style.left = `${15}px`;
+    previewText.style.top = `${30}px`; // Adjust the distance of text from cursor
+  });
+
+  document.querySelector('.sponsor-box').addEventListener('mouseleave', () => {
+    customCursor.style.display = 'none';
+  });
+
+  document.querySelector('.sponsor-box').addEventListener('mouseenter', () => {
+    customCursor.style.display = 'block';
+  });
+});
+*/
+
+
+
+
+const squares = document.querySelectorAll('.square');
+
+// Selecting the text content container
+const textContent = document.querySelector('.text-content');
+
+// Selecting all testimonials
+const testimonials = document.querySelectorAll('.testimonial');
+
+// Function to hide all testimonials
+function hideAllTestimonials() {
+  testimonials.forEach(testimonial => {
+    testimonial.style.display = 'none';
+  });
+}
+
+// Adding event listener to each square
+squares.forEach(square => {
+  square.addEventListener('mouseover', () => {
+    // Get the data-testimonial attribute value of the current square
+    const testimonialId = square.getAttribute('data-testimonial');
+    // Selecting the respective testimonial element
+    const testimonial = document.getElementById(testimonialId);
+    // Hiding all testimonials first
+    hideAllTestimonials();
+    // Displaying the respective testimonial
+    testimonial.style.display = 'block';
+  });
+
+  square.addEventListener('mouseout', () => {
+    // Hiding all testimonials when mouse leaves the square
+    hideAllTestimonials();
+  });
+});
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.education-slide');
+    const tooltip = document.querySelector('.education-tooltip');
+    const ctx = document.getElementById('performanceChart').getContext('2d');
+    let currentIndex = 0;
+
+    // Data for bar chart
+    let barChartData = {
+        labels: ['Percentage'],
+        datasets: [
+            {
+                label: ' Obtained',
+                data: [90], // Default data
+                backgroundColor: function(context) {
+                    const chart = context.chart;
+                    const {ctx, chartArea} = chart;
+
+                    if (!chartArea) {
+                        // This case happens on initial chart creation
+                        return;
+                    }
+
+                    const gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
+                    gradient.addColorStop(0, 'rgba(0, 0, 0, 0.7)'); // Darker at the bottom
+                    gradient.addColorStop(1, 'rgba(34, 34, 34, 0.5)'); // Lighter at the top
+                    return gradient;
+                },
+                borderColor: 'rgba(255, 215, 0, 1)',
+                borderWidth: 2
+            }
+        ]
+    };
+
+    // Chart options
+    const barChartOptions = {
+        responsive: true,
+        animation: {
+            duration: 1000,
+            easing: 'easeOutBounce'
+        },
+        plugins: {
+            legend: {
+                display: false
+            },
+            tooltip: {
+                enabled: true ,
+                backgroundColor: 'rgba(34, 34, 34, 0.8)', // Dark background for tooltip
+                titleColor: '#ffcc00', // Golden title color
+                bodyColor: '#f5f5f5', // Light body text color
+                borderColor: '#ffcc00',
+                borderWidth: 1
+
+            },
+            datalabels: {
+                color: '#ffcc00',
+                anchor: 'end',
+                align: 'start',
+                offset: 10,
+                font: {
+                    weight: 'bold',
+                    size: '16'
+                }
+            }
+        },
+        scales: {
+            x: {
+                grid: {
+                    display: false
+                },
+                ticks: {
+                    color: '#ffcc00'
+                }
+            },
+            y: {
+                beginAtZero: true,
+                max: 100,
+                grid: {
+                    display: true ,
+                    color: 'rgba(255, 255, 255, 0.1)' // Light grid lines
+                },
+                ticks: {
+                    stepSize: 10,
+                    color: '#ffcc00'
+                }
+            }
+        }
+    };
+
+    // Create bar chart instance
+    const barChart = new Chart(ctx, {
+        type: 'bar',
+        data: barChartData,
+        options: barChartOptions,
+        plugins: [ChartDataLabels]
+    });
+
+    function updateTooltipAndChart() {
+        const currentSlide = slides[currentIndex];
+        const tooltipText = currentSlide.getAttribute('data-tooltip');
+        const grade = currentSlide.getAttribute('data-grade');
+
+        tooltip.textContent = tooltipText;
+
+        // Update chart data
+        barChartData.datasets[0].data = [grade];
+        barChart.update();
+    }
+
+    function showNextSlide() {
+        slides[currentIndex].classList.remove('highlight');
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].classList.add('highlight');
+        updateTooltipAndChart();
+        document.querySelector('.education-carousel').style.transform = `translateX(-${currentIndex * 320}px)`;
+    }
+
+    // Interval for automatic sliding
+    setInterval(showNextSlide, 2000);
+
+    // Initial call to update tooltip and chart
+    updateTooltipAndChart();
+
+});
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const skillCircles = document.querySelectorAll(".skill-circle");
+    const margin = 50; // Margin for floating
+
+    function animateSkillCircles() {
+        skillCircles.forEach(circle => {
+            const rect = circle.getBoundingClientRect();
+            const isVisible = (
+                rect.top >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            );
+
+            if (isVisible) {
+                const percent = parseFloat(circle.getAttribute("data-percent"));
+                const valueCircle = circle.querySelector(".value");
+                const tooltip = circle.querySelector(".tooltip");
+                const emoji = circle.querySelector(".emoji");
+
+                const circumference = 2 * Math.PI * 20; // Radius of 20
+                const dashArray = `${percent / 100 * circumference}, ${circumference}`;
+                valueCircle.style.strokeDasharray = dashArray;
+                tooltip.textContent = `${percent}%`;
+
+                if (percent < 40) {
+                    emoji.textContent = "😢";
+                } else if (percent < 60) {
+                    emoji.textContent = "😐";
+                } else if (percent < 70) {
+                    emoji.textContent = "🙂";
+                } else if (percent <= 80) {
+                    emoji.textContent = "😊";
+                } else {
+                    emoji.textContent = "🎉";
+                }
+
+                emoji.style.top = "-40px";
+                emoji.style.opacity = "0";
+
+                circle.addEventListener("mouseenter", function() {
+                    emoji.style.top = "-50px";
+                    emoji.style.opacity = "1";
+                });
+
+                circle.addEventListener("mouseleave", function() {
+                    emoji.style.top = "-40px";
+                    emoji.style.opacity = "0";
+                });
+            }
+        });
+    }
+
+    function randomizePositions() {
+        skillCircles.forEach(circle => {
+            const randomX = Math.random() * (window.innerWidth - 50); // Subtract circle width to keep within bounds
+            const randomY = Math.random() * 550; // Use grid height
+            circle.style.left = `${randomX}px`;
+            circle.style.top = `${randomY}px`;
+
+            // Randomize animation duration and direction
+            const duration = (Math.random() * 5) + 5; // Between 5 and 10 seconds
+            const direction = Math.random() > 0.5 ? 1 : -1; // Randomize direction
+            circle.style.animationDuration = `${duration}s`;
+            circle.style.animationDirection = direction > 0 ? 'normal' : 'reverse';
+        });
+    }
+
+    animateSkillCircles();
+    randomizePositions();
+
+    let scrollTimeout;
+    window.addEventListener('scroll', function() {
+        if (scrollTimeout) {
+            clearTimeout(scrollTimeout);
+        }
+        scrollTimeout = setTimeout(function() {
+            animateSkillCircles();
+        }, 200);
+    });
+
+    window.addEventListener('resize', function() {
+        randomizePositions(); // Recalculate positions on window resize
+    });
+});
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
